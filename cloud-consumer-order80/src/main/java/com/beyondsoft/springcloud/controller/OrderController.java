@@ -20,7 +20,9 @@ public class OrderController {
      * http://docs.spring.io/spring-framewok/docs/5.2.2/RELEASE/javadoc/
      */
 
-    public static final  String PAYMENT_URL="http://localhost:8001";
+    //public static final  String PAYMENT_URL="http://localhost:8001";
+    public static final  String PAYMENT_URL="http://CLOUD-PAYMENT-SERVICE";
+
     @Resource
     private RestTemplate restTemplate;
 
