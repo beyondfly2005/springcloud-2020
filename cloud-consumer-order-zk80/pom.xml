@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>colud-provider-payment8004</artifactId>
-
+    <artifactId>cloud-consumer-order-zk80</artifactId>
     <dependencies>
         <!-- spring boot -->
         <dependency>
@@ -79,4 +78,5 @@
             <version>3.4.6</version>
         </dependency>
     </dependencies>
+
 </project>
