@@ -22,6 +22,11 @@ eureka:
     instance-id: payment8001  #修改在Eureka服务端显示的主机名称
     prefer-ip-address: true   #修改在Eureka服务端显示IP地址
 
+    #Eureka客户端向服务器发送心跳的时间间隔，单位为秒 默认为30秒
+    lease-renewal-interval-in-seconds: 2
+    #Eureka服务器端在接收到最后一次心跳后等待的时间上限，单位为秒(默认90秒) 超时剔除服务
+    lease-expiration-duration-in-seconds: 2
+
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml
   #mapper-locations: classpath*:/mybatis/*.xml
