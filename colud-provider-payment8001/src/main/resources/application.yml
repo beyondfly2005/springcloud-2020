@@ -18,6 +18,9 @@ eureka:
     service-url:
       #defaultZone: http://localhost:7001/eureka
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+  instance:
+    instance-id: payment8001  #修改在Eureka服务端显示的主机名称
+    prefer-ip-address: true   #修改在Eureka服务端显示IP地址
 
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml
