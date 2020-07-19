@@ -1,0 +1,13 @@
+server:
+  port: 8006
+
+spring:
+  application:
+    name: consul-provider-payment
+
+  cloud:
+    consul:
+      host: 192.168.198.128
+      port: 8500
+      discovery:
+        service_name: ${spring.application.name}
