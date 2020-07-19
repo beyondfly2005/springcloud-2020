@@ -11,3 +11,5 @@ spring:
       port: 8500
       discovery:
         service_name: ${spring.application.name}
+        ip-address: 192.168.0.107 # 指定 IP 地址
+        prefer-ip-address: true
